@@ -1,0 +1,299 @@
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/Barlow-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/Barlow-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/Barlow-500-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/Barlow-500-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/Barlow-600-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/Barlow-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/BarlowCondensed-600-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/BarlowCondensed-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/BarlowCondensed-700-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:'Barlow Condensed';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/BarlowCondensed-700-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+
+/* TCFD - podgląd: czerwień z herbu, czerń, taśma odblaskowa jako motyw */
+:root{--red:#D40404;--red-d:#A80303;--ink:#121314;--gray:#EEF0F2;--line:#D9DDE1;--muted:#5C6268;--fluo:#D4F20C;--silver:#C9CED3;--w:min(92vw,1640px);--hh:72px;--tape:linear-gradient(var(--fluo) 0 33%,var(--silver) 33% 67%,var(--fluo) 67%)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font:400 17px/1.6 Barlow,system-ui,sans-serif;color:var(--ink);background:#fff}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button{font:inherit;cursor:pointer;color:inherit}
+h1,h2,h3{font-family:'Barlow Condensed',Barlow,sans-serif;font-weight:700;line-height:1.05;margin:0;letter-spacing:.005em}
+h2{font-size:clamp(34px,3.6vw,60px)}
+h3{font-size:clamp(22px,1.6vw,28px)}
+p{margin:0 0 1em}
+.wrap{width:var(--w);margin:0 auto}
+.tasma{height:9px;background:var(--tape)}
+
+/* przyciski: ścięty róg jak naszywka */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:56px;padding:0 32px;border:0;font:700 20px/1 'Barlow Condensed',sans-serif;letter-spacing:.03em;text-decoration:none;color:#fff;background:var(--red);clip-path:polygon(0 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%);transition:background .2s}
+.btn:hover{background:var(--red-d)}
+.btn.czarny{background:var(--ink)}
+.btn.czarny:hover{background:#000}
+.btn[disabled]{background:#9aa0a6;cursor:not-allowed}
+
+/* nagłówek */
+.top{position:sticky;top:0;z-index:50;background:#fff}
+.top .wrap{height:var(--hh);display:flex;align-items:center;gap:28px}
+.logo{display:block;flex:none}
+.logo img{height:52px;width:auto}
+.menu{display:flex;gap:30px;margin-left:auto;font:600 19px/1 'Barlow Condensed',sans-serif;letter-spacing:.02em}
+.menu a{text-decoration:none;padding:8px 0;border-bottom:3px solid transparent}
+.menu a:hover,.menu a.akt{border-color:var(--red)}
+.tel{font-weight:600;text-decoration:none;white-space:nowrap;font-size:16px}
+.koszyk-btn{position:relative;display:flex;align-items:center;gap:10px;height:46px;padding:0 14px;background:var(--ink);color:#fff;border:0;font:700 18px/1 'Barlow Condensed',sans-serif;letter-spacing:.03em}
+.koszyk-btn svg{width:22px;height:22px}
+.koszyk-btn b{min-width:24px;height:24px;padding:0 6px;display:grid;place-items:center;background:var(--fluo);color:var(--ink);font:700 15px/1 Barlow,sans-serif}
+.hamb{display:none;width:46px;height:46px;border:0;background:none;padding:10px;margin-left:-6px}
+.hamb i{display:block;height:3px;background:var(--ink);margin:6px 0}
+.panel{display:none}
+
+/* pierwszy ekran */
+.hero{position:relative;min-height:calc(100svh - var(--hh) - 9px);display:flex;align-items:center;background:var(--ink);color:#fff;overflow:hidden}
+.hero-foto{position:absolute;inset:0}
+.hero-foto img{width:100%;height:100%;object-fit:cover;object-position:62% 40%}
+.hero-foto:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,11,.9) 0%,rgba(10,10,11,.62) 38%,rgba(10,10,11,.05) 72%)}
+.hero-in{position:relative;width:var(--w);margin:0 auto;padding:60px 0}
+.hero h1{font-size:clamp(44px,5.2vw,96px);max-width:min(900px,58vw)}
+.hero p{font-size:clamp(18px,1.35vw,22px);max-width:33em;margin:24px 0 36px;color:#E3E6E9}
+.hero .pieczec{display:flex;align-items:center;gap:14px;margin-top:40px;font-size:15px;color:#C4C9CE}
+.hero .pieczec img{width:44px;height:44px}
+
+/* sekcje */
+.sekcja{padding:clamp(64px,7vw,120px) 0}
+.szara{background:var(--gray)}
+.naglowek{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:36px}
+.naglowek p{max-width:40em;color:var(--muted);margin:12px 0 0}
+
+/* kategorie */
+.kategorie{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.kat{position:relative;display:block;text-decoration:none;color:#fff;background:var(--ink);overflow:hidden;aspect-ratio:4/5;border:0;padding:0;text-align:left;width:100%}
+.kat img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.kat:hover img{transform:scale(1.04)}
+.kat:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 42%,rgba(0,0,0,.85))}
+.kat span{position:absolute;z-index:1;left:20px;right:20px;bottom:18px;font:700 clamp(24px,1.7vw,30px)/1.05 'Barlow Condensed',sans-serif}
+.kat small{display:block;font:500 15px/1.3 Barlow,sans-serif;color:#D5D9DD;margin-top:6px}
+.kat:before{content:"";position:absolute;z-index:2;left:0;right:0;top:0;height:7px;background:var(--tape);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.kat:hover:before{transform:scaleX(1)}
+
+/* sklep */
+.filtry{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.filtry button{border:2px solid var(--ink);background:#fff;padding:10px 16px;font:600 17px/1 'Barlow Condensed',sans-serif;letter-spacing:.02em}
+.filtry button.akt{background:var(--ink);color:#fff}
+.siatka{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.karta{position:relative;display:flex;flex-direction:column;background:#fff;text-decoration:none;min-width:0}
+.karta .fot{position:relative;aspect-ratio:4/3;overflow:hidden;background:#fff}
+.karta .fot img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.karta:hover .fot img{transform:scale(1.04)}
+.karta .opis{display:flex;flex-direction:column;flex:1;padding:18px 20px 20px;border-top:6px solid;border-image:var(--tape) 1}
+.karta h3{font-size:25px}
+.karta .krotko{font-size:15.5px;line-height:1.45;color:var(--muted);margin:6px 0 16px}
+.karta .dol{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.cena{font:700 26px/1 'Barlow Condensed',sans-serif;white-space:nowrap}
+.cena small{font:500 15px Barlow,sans-serif;color:var(--muted);margin-right:4px}
+.dodaj{flex:none;width:50px;height:50px;border:0;background:var(--red);color:#fff;display:grid;place-items:center;clip-path:polygon(0 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%)}
+.dodaj:hover{background:var(--red-d)}
+.dodaj svg{width:24px;height:24px}
+.dodaj.szary{background:#8d9399}
+.znacz{position:absolute;left:0;top:14px;background:var(--ink);color:#fff;font:700 14px/1 'Barlow Condensed',sans-serif;letter-spacing:.05em;padding:7px 10px}
+.platnosci{display:flex;flex-wrap:wrap;gap:10px 40px;margin-top:40px;padding-top:26px;border-top:1px solid var(--line);color:var(--muted);font-size:16px}
+.platnosci b{color:var(--ink);font-weight:600}
+
+/* dla jednostek */
+.dzielona{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,90px);align-items:center}
+.dzielona figure{margin:0;justify-self:end;max-width:960px;width:100%}
+.dzielona figure img{width:100%}
+.lista{list-style:none;padding:0;margin:24px 0 32px}
+.lista li{position:relative;padding:12px 0 12px 34px;border-bottom:1px solid var(--line)}
+.lista li:before{content:"";position:absolute;left:0;top:21px;width:18px;height:9px;background:var(--tape)}
+.lista b{font-weight:600}
+
+/* dla firm - ciemna sekcja */
+.firmy{background:var(--ink);color:#fff}
+.firmy .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,90px);align-items:center}
+.firmy figure{margin:0}
+.firmy figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.firmy p{color:#C9CED3}
+.uslugi{display:grid;grid-template-columns:1fr 1fr;gap:0 28px;list-style:none;padding:0;margin:26px 0 34px}
+.uslugi li{padding:14px 0;border-bottom:1px solid #3A3E42;font:600 20px/1.2 'Barlow Condensed',sans-serif;letter-spacing:.01em}
+
+/* o nas */
+.onas{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(32px,5vw,90px);align-items:start}
+.cytat{font:600 clamp(26px,2.3vw,38px)/1.2 'Barlow Condensed',sans-serif;margin:0 0 26px;padding-left:24px;border-left:6px solid var(--red)}
+.materialy{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 26px}
+.materialy span{border:1px solid var(--line);padding:6px 12px;font-weight:500;font-size:15px}
+.herb{margin:0;background:var(--ink)}
+.herb img{width:100%;aspect-ratio:2400/1309;object-fit:cover}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,4vw,70px)}
+.dane{font-size:18px;margin:0}
+.dane dt{font:700 15px/1 'Barlow Condensed',sans-serif;letter-spacing:.06em;color:var(--muted);margin-top:22px}
+.dane dd{margin:6px 0 0;font-weight:500}
+.dane a{text-decoration:none;border-bottom:2px solid var(--red)}
+.form{background:#fff;padding:clamp(22px,2.5vw,40px)}
+.form .rzad{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:600;font-size:15px;margin:0 0 14px}
+input,select,textarea{display:block;width:100%;margin-top:6px;padding:13px 14px;border:1.5px solid #B9BFC5;background:#fff;font:400 17px Barlow,sans-serif;color:var(--ink);border-radius:0}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--ink);outline-offset:0;border-color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+.zgoda{display:flex;gap:10px;font-weight:400;font-size:14px;color:var(--muted)}
+.zgoda input{width:auto;margin-top:3px;flex:none}
+.info{font-size:14px;color:var(--muted);margin:12px 0 0}
+.mapa{margin-top:28px;aspect-ratio:16/10;background:#dfe3e6}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+
+/* stopka */
+.stopka{background:var(--ink);color:#B9BFC5;padding:56px 0 30px;font-size:15.5px}
+.stopka .kol{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+.stopka .znak{width:84px;height:84px;margin-bottom:14px}
+.stopka h4{color:#fff;font:700 18px/1 'Barlow Condensed',sans-serif;letter-spacing:.04em;margin:0 0 14px}
+.stopka a{text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka ul{list-style:none;padding:0;margin:0}
+.stopka li{margin:0 0 8px}
+.stopka .dolna{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-top:40px;padding-top:22px;border-top:1px solid #33373B}
+
+/* koszyk */
+.zaslona{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:80;opacity:0;pointer-events:none;transition:opacity .25s}
+.koszyk{position:fixed;z-index:90;top:0;right:0;bottom:0;width:min(460px,100vw);background:#fff;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s cubic-bezier(.3,.7,.3,1);visibility:hidden}
+body.k-otw .zaslona{opacity:1;pointer-events:auto}
+body.k-otw .koszyk{transform:none;visibility:visible}
+.k-gora{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px solid var(--line)}
+.k-gora h2{font-size:32px}
+.zamknij{width:44px;height:44px;border:0;background:var(--gray);font-size:26px;line-height:1}
+.k-lista{flex:1;overflow:auto;padding:6px 22px}
+.poz{display:grid;grid-template-columns:76px minmax(0,1fr) auto;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.poz img{width:76px;height:57px;object-fit:cover}
+.poz h4{margin:0;font:700 19px/1.1 'Barlow Condensed',sans-serif}
+.poz small{display:block;color:var(--muted);font-size:13.5px;line-height:1.3;margin-top:3px}
+.ilosc{display:inline-flex;align-items:center;margin-top:8px;border:1.5px solid #B9BFC5;background:#fff}
+.ilosc button{width:32px;height:30px;border:0;background:#fff;font-size:18px}
+.ilosc span{min-width:26px;text-align:center;font-weight:600}
+.poz .p{font:700 19px/1 'Barlow Condensed',sans-serif;text-align:right;white-space:nowrap}
+.poz .usun{display:block;margin:10px 0 0 auto;border:0;background:none;color:var(--muted);font-size:13px;text-decoration:underline;padding:0}
+.k-pusty{padding:40px 0;color:var(--muted)}
+.k-dol{padding:18px 22px 22px;border-top:1px solid var(--line);background:var(--gray)}
+.suma{display:flex;justify-content:space-between;align-items:baseline;font:700 28px/1 'Barlow Condensed',sans-serif;margin-bottom:6px}
+.k-dol p{font-size:14px;color:var(--muted);margin:0}
+.k-dol .btn{width:100%;margin-top:14px}
+.k-krok{display:none}
+.koszyk.zam .k-lista{display:none}
+.koszyk.zam .k-krok{display:block;flex:1;overflow:auto;padding:18px 22px}
+.wybor{display:grid;gap:8px;margin:6px 0 18px}
+.wybor label{display:flex;align-items:center;gap:10px;margin:0;padding:12px 14px;border:1.5px solid #B9BFC5;font-weight:500}
+.wybor input{width:auto;margin:0}
+.wybor label:has(input:checked){border-color:var(--ink);box-shadow:inset 5px 0 0 var(--red)}
+.k-krok h3{font-size:22px;margin:4px 0 8px}
+.wroc{border:0;background:none;padding:0;text-decoration:underline;color:var(--muted);font-size:15px;margin-bottom:12px}
+.toast{position:fixed;z-index:100;left:50%;bottom:24px;transform:translate(-50%,calc(100% + 60px));visibility:hidden;background:var(--ink);color:#fff;padding:14px 20px;font-weight:500;transition:transform .3s,visibility .3s;max-width:92vw;border-left:6px solid var(--fluo)}
+.toast.widac{transform:translate(-50%,0);visibility:visible}
+
+/* karta produktu */
+.okruszki{font-size:15px;color:var(--muted);padding:22px 0 0}
+.okruszki a{text-decoration:none}
+.okruszki a:hover{text-decoration:underline}
+.produkt{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,4vw,72px);padding:22px 0 clamp(56px,6vw,100px);align-items:start}
+.galeria{position:relative;min-width:0}
+.slajdy{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;background:#fff}
+.slajdy::-webkit-scrollbar{display:none}
+.slajdy img{flex:0 0 100%;width:100%;max-width:none;aspect-ratio:4/3;object-fit:contain;scroll-snap-align:start;background:#fff}
+.miniatury{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-top:10px}
+.miniatury button{padding:0;border:2px solid transparent;background:#fff}
+.miniatury button.akt{border-color:var(--red)}
+.miniatury img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.strzalka{position:absolute;top:calc(50% - 50px);width:46px;height:46px;border:0;background:rgba(18,19,20,.82);color:#fff;font-size:24px;display:grid;place-items:center}
+.strzalka.l{left:10px}.strzalka.p{right:10px}
+.kropki{display:none}
+.zakup{min-width:0}
+.zakup h1{font-size:clamp(40px,4vw,68px)}
+.zakup .krotko{font-size:19px;color:var(--muted);margin:12px 0 22px}
+.zakup .cena{font-size:44px;display:block;margin-bottom:24px}
+.zakup label{max-width:460px}
+.zakup .akcje{display:flex;gap:12px;align-items:stretch;margin:22px 0 14px;flex-wrap:wrap}
+.zakup .ilosc{margin:0;height:56px}
+.zakup .ilosc button{height:100%;width:44px}
+.zakup .uwaga{font-size:15px;color:var(--muted);border-left:5px solid var(--fluo);padding:4px 0 4px 14px;margin-top:22px}
+.opis-prod{max-width:860px}
+.opis-prod p{font-size:18px}
+.podobne{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 60px)/4);gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}
+.podobne .karta{scroll-snap-align:start}
+
+@media (max-width:1180px){
+ .menu{gap:20px}
+ .tel{display:none}
+ .kategorie{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(220px,30%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+ .kat{scroll-snap-align:start}
+ .siatka{grid-template-columns:repeat(3,minmax(0,1fr))}
+ .podobne{grid-auto-columns:calc((100% - 40px)/3)}
+}
+@media (max-width:900px){
+ :root{--hh:62px;--w:calc(100vw - 32px)}
+ body{font-size:16.5px}
+ .menu{display:none}
+ .hamb{display:block}
+ .logo img{height:36px}
+ .top .wrap{gap:10px}
+ .koszyk-btn{margin-left:auto;height:44px;padding:0 12px}
+ .koszyk-btn .tx{display:none}
+ .panel{position:fixed;z-index:49;top:calc(var(--hh) + 9px);left:0;right:0;background:#fff;padding:6px 16px 22px;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+ body.m-otw .panel{display:block}
+ .panel a{display:block;padding:14px 0;border-bottom:1px solid var(--line);font:700 24px/1.1 'Barlow Condensed',sans-serif;text-decoration:none}
+ .panel a.tel{font:600 18px Barlow,sans-serif;border:0;padding-top:16px}
+ .hero{flex-direction:column;align-items:stretch}
+ .hero-foto{position:relative;inset:auto;flex:1 1 0;min-height:min(56vw,26svh)}
+ .hero-foto img{position:absolute;inset:0;object-position:58% 30%}
+ .hero-foto:after{background:linear-gradient(180deg,rgba(18,19,20,0) 55%,var(--ink))}
+ .hero-in{flex:0 0 auto;padding:4px 0 24px}
+ .hero h1{font-size:clamp(32px,min(9.6vw,5.8svh),50px);max-width:none}
+ .hero p{font-size:clamp(15.5px,2.4svh,18px);line-height:1.5;margin:12px 0 24px}
+ .hero .pieczec{margin-top:18px;font-size:14px}
+ .hero .pieczec img{width:36px;height:36px}
+ .hero .btn{width:100%}
+ .naglowek{display:block;margin-bottom:26px}
+ .kategorie{grid-auto-columns:62%;gap:12px}
+ .kat{aspect-ratio:4/4.6}
+ .siatka{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .karta .opis{padding:12px 12px 14px}
+ .karta h3{font-size:20px}
+ .karta .krotko{display:none}
+ .cena{font-size:22px}
+ .dodaj{width:42px;height:42px}
+ .znacz{font-size:12px;top:10px;padding:5px 8px}
+ .dzielona,.firmy .wrap,.onas,.kontakt,.produkt{grid-template-columns:minmax(0,1fr)}
+ .dzielona figure{justify-self:stretch;order:-1}
+ .uslugi{grid-template-columns:1fr}
+ .form .rzad{grid-template-columns:1fr;gap:0}
+ .stopka .kol{grid-template-columns:1fr 1fr}
+ .stopka .kol>div:first-child{grid-column:1/-1}
+ .platnosci{gap:8px 24px}
+ .produkt{padding-top:12px;gap:22px}
+ .galeria{margin:0 -16px}
+ .okruszki{padding-top:14px;font-size:14px}
+ .miniatury{display:none}
+ .kropki{display:flex;justify-content:center;gap:8px;margin-top:10px}
+ .kropki i{width:8px;height:8px;background:#B9BFC5}
+ .kropki i.akt{background:var(--red)}
+ .strzalka{display:none}
+ .zakup .cena{font-size:36px;margin-bottom:18px}
+ .zakup .akcje .btn{flex:1;padding:0 18px}
+ .podobne{grid-auto-columns:46%;gap:12px}
+}
+@media (max-width:380px){.siatka{gap:10px}.karta h3{font-size:18.5px}.cena{font-size:20px}.dodaj{width:38px;height:38px}}
+@media (min-width:1900px){body{font-size:18px}.siatka{grid-template-columns:repeat(5,minmax(0,1fr))}.podobne{grid-auto-columns:calc((100% - 80px)/5)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+.fakty{list-style:none;padding:0;margin:28px 0 0;border-top:1px solid var(--line);max-width:520px}
+.fakty li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:16px}
+.fakty li span{color:var(--muted)}
+.fakty li b{font-weight:600;text-align:right}

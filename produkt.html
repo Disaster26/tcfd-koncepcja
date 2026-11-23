@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#121314">
+<link rel="icon" href="img/znak.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/BarlowCondensed-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<title>Produkt | TCFD Departament Pożarnictwa</title>
+<meta name="description" content="Sprzęt i akcesoria dla strażaków szyte w Polsce - karta produktu w sklepie TCFD.">
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <button class="hamb" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <a class="logo" href="index.html" aria-label="TCFD Departament Pożarnictwa - strona główna"><img src="img/logo.svg" alt="TCFD Departament Pożarnictwa" width="145" height="46"></a>
+  <nav class="menu" aria-label="Menu główne">
+   <a href="index.html#sklep">Sklep</a>
+   <a href="index.html#jednostki">Dla jednostek</a>
+   <a href="index.html#firmy">Dla firm</a>
+   <a href="index.html#o-nas">O nas</a>
+   <a href="index.html#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48506998605">506 998 605</a>
+  <button class="koszyk-btn" type="button" aria-label="Koszyk"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 4h2.5l2.2 11h10.6l2-8H7"/><circle cx="9.5" cy="19.5" r="1.4" fill="currentColor"/><circle cx="17" cy="19.5" r="1.4" fill="currentColor"/></svg><span class="tx">Koszyk</span><b class="licznik">0</b></button>
+ </div>
+ <div class="tasma"></div>
+</header>
+<nav class="panel" aria-label="Menu mobilne">
+ <a href="index.html#sklep">Sklep</a>
+ <a href="index.html#jednostki">Dla jednostek</a>
+ <a href="index.html#firmy">Dla firm</a>
+ <a href="index.html#o-nas">O nas</a>
+ <a href="index.html#kontakt">Kontakt</a>
+ <a class="tel" href="tel:+48506998605">tel. 506 998 605</a>
+</nav>
+<main>
+<div class="wrap">
+ <nav class="okruszki" aria-label="Ścieżka"><a href="index.html">Strona główna</a> / <a href="index.html#sklep">Sklep</a> / <a id="okr-kat" href="index.html#sklep">Kategoria</a> / <span id="okr-nazwa"></span></nav>
+ <div class="produkt">
+  <div class="galeria">
+   <div class="slajdy" id="slajdy"></div>
+   <button class="strzalka l" type="button" aria-label="Poprzednie zdjęcie">&lsaquo;</button>
+   <button class="strzalka p" type="button" aria-label="Następne zdjęcie">&rsaquo;</button>
+   <div class="kropki" id="kropki"></div>
+   <div class="miniatury" id="miniatury"></div>
+  </div>
+  <div class="zakup" id="zakup">
+   <h1 id="p-nazwa"></h1>
+   <p class="krotko" id="p-krotko"></p>
+   <span class="cena" id="p-cena"></span>
+   <div id="p-opcje"></div>
+   <div class="akcje">
+    <div class="ilosc"><button type="button" id="p-minus" aria-label="Mniej">-</button><span id="p-ile">1</span><button type="button" id="p-plus" aria-label="Więcej">+</button></div>
+    <button class="btn" type="button" id="p-dodaj">Dodaj do koszyka</button>
+   </div>
+   <p class="uwaga" id="p-uwaga"></p>
+   <ul class="fakty"><li><span>Produkcja</span><b>szyte w Polsce</b></li><li><span>Dostawa</span><b>Paczkomaty InPost, kurier DPD</b></li><li><span>Płatność</span><b>Przelewy24, BLIK, przelew</b></li></ul>
+  </div>
+ </div>
+</div>
+<div class="tasma"></div>
+<section class="sekcja" aria-labelledby="h-opis" style="padding-bottom:40px">
+ <div class="wrap opis-prod">
+  <h2 id="h-opis" style="margin-bottom:24px;font-size:clamp(30px,2.6vw,44px)">Opis produktu</h2>
+  <div id="p-opis"></div>
+ </div>
+</section>
+<section class="sekcja szara" aria-labelledby="h-pod">
+ <div class="wrap">
+  <h2 id="h-pod" style="margin-bottom:28px;font-size:clamp(30px,2.6vw,44px)">Może się przydać</h2>
+  <div class="podobne" id="podobne"></div>
+ </div>
+</section>
+</main>
+<footer class="stopka">
+ <div class="wrap">
+  <div class="kol">
+   <div>
+    <img class="znak" src="img/znak-bialy.svg" alt="" width="84" height="84" loading="lazy">
+    <p>TCFD Departament Pożarnictwa<br>ul. Podgórna 18/3, 87-100 Toruń<br>sprzęt i akcesoria dla strażaków, szyte w Polsce</p>
+   </div>
+   <div>
+    <h4>Sklep</h4>
+    <ul><li><a href="index.html#sklep">Wszystkie produkty</a></li><li><a href="index.html#sklep">Linia RIT</a></li><li><a href="index.html#jednostki">Naszywki z logo</a></li><li><a href="index.html#jednostki">Projekt logo</a></li></ul>
+   </div>
+   <div>
+    <h4>Informacje</h4>
+    <ul><li><a href="#">Regulamin sklepu</a></li><li><a href="#">Polityka prywatności</a></li><li><a href="#">Dostawa i płatności</a></li><li><a href="#">Zwroty i reklamacje</a></li></ul>
+   </div>
+   <div>
+    <h4>Kontakt</h4>
+    <ul><li><a href="tel:+48506998605">tel. 506 998 605</a></li><li>biuro@tcfd.pl</li><li>pon.-pt. 8:00-16:00</li><li><a href="https://www.facebook.com/tcfd.departament.pozarnictwa" rel="noopener">Facebook</a> &middot; <a href="https://www.instagram.com/tcfd_departament_pozarnictwa/" rel="noopener">Instagram</a></li></ul>
+   </div>
+  </div>
+  <div class="dolna">
+   <span>&copy; 2026 TCFD Departament Pożarnictwa</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=tcfd.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+<div class="zaslona"></div>
+<aside class="koszyk" aria-label="Koszyk">
+ <div class="k-gora"><h2>Koszyk</h2><button class="zamknij" type="button" aria-label="Zamknij koszyk">&times;</button></div>
+ <div class="k-lista"></div>
+ <div class="k-krok">
+  <button class="wroc" type="button">&larr; wróć do koszyka</button>
+  <h3>Dostawa</h3>
+  <div class="wybor">
+   <label><input type="radio" name="dost" checked> Paczkomat InPost</label>
+   <label><input type="radio" name="dost"> Kurier DPD</label>
+   <label><input type="radio" name="dost"> Odbiór osobisty w Toruniu</label>
+  </div>
+  <h3>Płatność</h3>
+  <div class="wybor">
+   <label><input type="radio" name="plat" checked> Przelewy24 (szybki przelew, karta)</label>
+   <label><input type="radio" name="plat"> BLIK</label>
+   <label><input type="radio" name="plat"> Przelew tradycyjny</label>
+  </div>
+  <label>Imię i nazwisko lub nazwa jednostki<input autocomplete="off"></label>
+  <label>E-mail<input type="email" autocomplete="off"></label>
+  <button class="btn" type="button" disabled style="width:100%">Zamawiam i płacę</button>
+  <p class="info">To podgląd sklepu - zamówienie nie jest składane.</p>
+ </div>
+ <div class="k-dol">
+  <div class="suma"><span>Razem</span><span class="k-suma">0,00 zł</span></div>
+  <p>Koszt dostawy w następnym kroku.</p>
+  <button class="btn k-dalej" type="button">Przejdź do zamówienia</button>
+ </div>
+</aside>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/dane.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
