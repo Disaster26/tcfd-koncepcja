@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#121314">
+<link rel="icon" href="img/znak.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/BarlowCondensed-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Barlow-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<title>Sklep strażacki - naszywki, oporządzenie, linia RIT | TCFD</title>
+<meta name="description" content="Sklep TCFD: naszywki rozpoznawcze, oporządzenie, linia RIT i szelki dla strażaków. Szyte w Polsce, testowane w akcji.">
+</head>
+<body>
+<header class="top">
+ <div class="wrap">
+  <button class="hamb" type="button" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <a class="logo" href="index.html" aria-label="TCFD Departament Pożarnictwa - strona główna"><img src="img/logo.svg" alt="TCFD Departament Pożarnictwa" width="145" height="46"></a>
+  <nav class="menu" aria-label="Menu główne">
+   <div class="z-rozw"><a href="sklep.html" class="akt">Sklep</a><div class="rozw"><div class="rozw-in"><a href="naszywki-i-oznaczenia.html"><img src="img/p-tcfd-id-tag-0.webp" alt="" width="120" height="90" loading="lazy"><span>Naszywki i oznaczenia<small>ID-tag, N-tag, BackTag, flaga</small></span></a><a href="oporzadzenie.html"><img src="img/p-tcfd-fast-0.webp" alt="" width="120" height="90" loading="lazy"><span>Oporządzenie<small>uchwyty, bojówki, adaptery</small></span></a><a href="linia-rit.html"><img src="img/p-tcfd-ritband-0.webp" alt="" width="120" height="90" loading="lazy"><span>Linia RIT<small>dla rot asekuracyjnych</small></span></a><a href="szelki.html"><img src="img/p-tcfd-v-shape-0.webp" alt="" width="120" height="90" loading="lazy"><span>Szelki<small>V-shape z comfortpadem</small></span></a><a class="wszystko" href="sklep.html">Wszystkie produkty &rarr;</a></div></div></div><a href="odziez-na-co-dzien.html">Odzież na co dzień</a><a href="dla-jednostek.html">Dla jednostek</a><a href="o-nas.html">O nas</a><a href="kontakt.html">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48506998605">506 998 605</a>
+  <button class="koszyk-btn" type="button" aria-label="Koszyk"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"><path d="M3 4h2.5l2.2 11h10.6l2-8H7"/><circle cx="9.5" cy="19.5" r="1.4" fill="currentColor"/><circle cx="17" cy="19.5" r="1.4" fill="currentColor"/></svg><span class="tx">Koszyk</span><b class="licznik">0</b></button>
+ </div>
+ <div class="tasma"></div>
+</header>
+<nav class="panel" aria-label="Menu mobilne">
+ <a href="sklep.html">Sklep</a><a class="pod" href="naszywki-i-oznaczenia.html">Naszywki i oznaczenia</a><a class="pod" href="oporzadzenie.html">Oporządzenie</a><a class="pod" href="linia-rit.html">Linia RIT</a><a class="pod" href="szelki.html">Szelki</a><a href="odziez-na-co-dzien.html">Odzież na co dzień</a><a href="dla-jednostek.html">Dla jednostek</a><a href="o-nas.html">O nas</a><a href="kontakt.html">Kontakt</a>
+ <a class="tel" href="tel:+48506998605">tel. 506 998 605</a>
+</nav>
+<main>
+<section class="baner-str">
+ <div class="wrap">
+  <nav class="okruszki jasne" aria-label="Ścieżka"><a href="index.html">Strona główna</a> / <span>Sklep</span></nav>
+  <h1>Sklep</h1>
+  <p>Wszystko, co szyjemy dla strażaków. Produkty szyte na zamówienie mają czas realizacji podany na karcie produktu.</p>
+ </div>
+</section>
+<div class="tasma gruba"></div>
+<section class="sekcja sklep-uklad">
+ <div class="wrap sklep-grid">
+  <aside class="boczne" aria-label="Kategorie sklepu"><h2>Kategorie</h2><a href="sklep.html" class="akt">Wszystkie produkty</a><a href="naszywki-i-oznaczenia.html">Naszywki i oznaczenia</a><a href="oporzadzenie.html">Oporządzenie</a><a href="linia-rit.html">Linia RIT</a><a href="szelki.html">Szelki</a><a href="odziez-na-co-dzien.html">Odzież na co dzień <em>wkrótce</em></a><div class="boczne-info"><b>Dla jednostek OSP i PSP</b><p>Naszywki z logo, odzież z haftem, projekt graficzny.</p><a href="dla-jednostek.html">Oferta dla jednostek &rarr;</a></div></aside>
+  <div>
+   <div class="pasek-sklepu">
+    <span class="ile" id="ile"></span>
+    <label class="sortuj">Sortuj<select id="sort"><option value="">domyślnie</option><option value="cena">cena: od najniższej</option><option value="-cena">cena: od najwyższej</option><option value="nazwa">nazwa A-Z</option></select></label>
+   </div>
+   <div class="siatka" id="siatka" data-kat="wszystko"></div>
+   <div class="platnosci">
+    <span><b>Płatności:</b> Przelewy24, BLIK, przelew</span>
+    <span><b>Dostawa:</b> Paczkomaty InPost, kurier DPD</span>
+    <span><b>Zakupy:</b> bez zakładania konta albo z kontem klienta</span>
+   </div>
+  </div>
+ </div>
+</section>
+</main>
+<div class="tasma gruba"></div>
+<footer class="stopka">
+ <div class="wrap">
+  <div class="kol">
+   <div>
+    <img class="znak" src="img/znak-bialy.svg" alt="" width="84" height="84" loading="lazy">
+    <p>TCFD Departament Pożarnictwa<br>ul. Podgórna 18/3, 87-100 Toruń<br>sprzęt i akcesoria dla strażaków, szyte w Polsce</p>
+   </div>
+   <div>
+    <h4>Sklep</h4>
+    <ul><li><a href="naszywki-i-oznaczenia.html">Naszywki i oznaczenia</a></li><li><a href="oporzadzenie.html">Oporządzenie</a></li><li><a href="linia-rit.html">Linia RIT</a></li><li><a href="szelki.html">Szelki</a></li><li><a href="odziez-na-co-dzien.html">Odzież na co dzień</a></li></ul>
+   </div>
+   <div>
+    <h4>Informacje</h4>
+    <ul><li><a href="dla-jednostek.html">Oferta dla jednostek</a></li><li><a href="#">Regulamin sklepu</a></li><li><a href="#">Polityka prywatności</a></li><li><a href="#">Dostawa i płatności</a></li><li><a href="#">Zwroty i reklamacje</a></li></ul>
+   </div>
+   <div>
+    <h4>Kontakt</h4>
+    <ul><li><a href="tel:+48506998605">tel. 506 998 605</a></li><li>biuro@tcfd.pl</li><li>pon.-pt. 8:00-16:00</li><li><a href="https://www.facebook.com/tcfd.departament.pozarnictwa" rel="noopener">Facebook</a> &middot; <a href="https://www.instagram.com/tcfd_departament_pozarnictwa/" rel="noopener">Instagram</a></li></ul>
+   </div>
+  </div>
+  <div class="dolna">
+   <span>&copy; 2026 TCFD Departament Pożarnictwa</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=tcfd.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+<div class="zaslona"></div>
+<aside class="koszyk" aria-label="Koszyk">
+ <div class="k-gora"><h2>Koszyk</h2><button class="zamknij" type="button" aria-label="Zamknij koszyk">&times;</button></div>
+ <div class="k-lista"></div>
+ <div class="k-krok">
+  <button class="wroc" type="button">&larr; wróć do koszyka</button>
+  <h3>Jak kupujesz?</h3>
+  <div class="wybor">
+   <label><input type="radio" name="konto" checked> Bez rejestracji (jako gość)</label>
+   <label><input type="radio" name="konto"> Załóż konto przy zamówieniu</label>
+   <label><input type="radio" name="konto"> Mam już konto - zaloguj</label>
+  </div>
+  <h3>Dostawa</h3>
+  <div class="wybor">
+   <label><input type="radio" name="dost" checked> Paczkomat InPost</label>
+   <label><input type="radio" name="dost"> Kurier DPD</label>
+  </div>
+  <h3>Płatność</h3>
+  <div class="wybor">
+   <label><input type="radio" name="plat" checked> Przelewy24 (szybki przelew, karta)</label>
+   <label><input type="radio" name="plat"> BLIK</label>
+   <label><input type="radio" name="plat"> Przelew tradycyjny</label>
+  </div>
+  <label>Imię i nazwisko lub nazwa jednostki<input autocomplete="off"></label>
+  <label>E-mail<input type="email" autocomplete="off"></label>
+  <label class="zgoda"><input type="checkbox"> Chcę fakturę na firmę lub jednostkę (NIP)</label>
+  <button class="btn" type="button" disabled style="width:100%">Zamawiam i płacę</button>
+  <p class="info">To podgląd sklepu - zamówienie nie jest składane.</p>
+ </div>
+ <div class="k-dol">
+  <form class="kod"><label>Kod rabatowy<span><input name="kod" autocomplete="off" placeholder="np. RIT10"><button type="submit">Użyj</button></span></label><p class="kod-info"></p></form>
+  <div class="rabat" hidden><span>Rabat</span><span class="k-rabat"></span></div>
+  <div class="suma"><span>Razem</span><span class="k-suma">0,00 zł</span></div>
+  <p>Koszt dostawy w następnym kroku.</p>
+  <button class="btn k-dalej" type="button">Przejdź do zamówienia</button>
+ </div>
+</aside>
+<div class="promo" role="dialog" aria-labelledby="promo-h" hidden>
+ <button class="promo-x" type="button" aria-label="Zamknij">&times;</button>
+ <div class="tasma"></div>
+ <div class="promo-in">
+  <small>Przykład promocji na kategorię</small>
+  <h2 id="promo-h">-10% na całą linię RIT</h2>
+  <p>Wpisz kod <b>RIT10</b> w koszyku. Rabat liczy się tylko od produktów z linii RIT.</p>
+  <a class="btn" href="linia-rit.html">Zobacz linię RIT</a>
+ </div>
+</div>
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="js/dane.js" defer></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
